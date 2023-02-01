@@ -1,0 +1,372 @@
+html{
+    height: 100%;
+}
+
+body{
+    /*background-image: url(../img/bg2.jpg);
+    background-size: 100%;
+    background-repeat: repeat;
+    background-attachment: fixed;*/
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif !important;
+    overflow-x: hidden;
+}
+
+hr{
+    background-color: #fff !important;
+}
+
+.bgDark2{
+    
+    background-color: #eee;
+}
+
+.bgDark3{
+    
+    background-color: rgb(31, 59, 90) !important;
+}
+
+.hr2{
+    background-color: #ddd !important;
+}
+
+.html{
+	flex: 1;
+}
+
+.footer{
+    padding: 15px 0;
+    text-align: center; 
+}
+
+/* Arrumando o bug do bootstrap que ocupa mais de 100% da tela */
+.row{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.FN{
+    width: 40px;
+    height: 40px;
+}
+
+.login{
+    margin: 20% 0px 20px 0px;
+    padding: 5%;
+    border-radius: 5px;
+    box-shadow: 0 0 8px 0px;
+}
+
+.cadastro{
+    margin: 40px 20px;
+    padding: 0 3% 1.7% 3%;
+    border-radius: 5px;
+    box-shadow: 0 0 8px 0px;
+}
+
+.botao{
+    cursor: pointer;
+    color: #fff !important;
+    border-color: #fff !important;
+    margin: 2% 0 0 0;
+}
+
+.botao:hover{
+    background-color: rgb(183, 192, 202) !important; 
+    color: #000 !important;
+}
+
+.bt2{
+    text-align: center;
+    margin: 4% auto;
+}
+
+.btn2{
+	width: 49%;
+	cursor: pointer;
+    color: #fff !important;
+    border-color: #fff !important;
+    margin: 2% 1% 0 0;
+}
+
+.btn2:hover{
+    background-color: rgb(255, 1, 1) !important; 
+	border-color: rgb(255, 1, 1) !important; 
+}
+
+.btn3{
+	width: 50%;
+	cursor: pointer;
+    color: #fff !important;
+    border-color: #fff !important;
+    margin: 2% 0% 0 0;
+}
+
+.btn3:hover{
+    background-color: rgb(0, 173, 38) !important; 
+	border-color: rgb(0, 173, 38) !important; 
+}
+
+.center{
+    text-align: center;
+    margin: auto;
+    display: block !important;
+}
+
+.ca{
+    border: #ddd solid 2px;
+    background-color: rgb(16, 42, 71) !important; 
+    border-radius: 5px;
+    margin-bottom: 3%;
+}
+
+.bx{
+  -webkit-box-shadow: 3px 4px 14px -1px rgba(0,0,0,0.76) !important;
+  -moz-box-shadow: 3px 4px 14px -1px rgba(0,0,0,0.76) !important;
+  box-shadow: 3px 4px 14px -1px rgba(0,0,0,0.76) !important;
+}
+
+/*biografia*/
+
+.testimonial-section{
+    padding: 80px 0;
+    text-align: center;
+}
+  
+.inner-width{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+  
+  .testimonial-section h1{
+    font-weight: 400;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+  
+.testimonial-pics{
+    padding: 40px 0;
+}
+  
+.testimonial-pics img{
+    width: 160px;
+    height: 160px;
+    border-radius: 20%;
+    margin: 0 20px;
+    filter: grayscale(100%);
+    transition: .3s;
+    cursor: pointer;
+}
+  
+.testimonial-pics img:hover, .testimonial-pics img.active{
+    filter: none;
+}
+  
+  
+.testimonial-contents{
+    max-width: 600px;
+    margin: auto;
+}
+  
+.testimonial{
+    display: none;
+}
+  
+.testimonial.active{
+    display: block;
+}
+  
+.testimonial p{
+    color: #5c5c5c;
+    margin-bottom: 20px;
+}
+  
+.testimonial .description{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 15px;
+}
+
+/*agendamento*/
+
+.select-size  input{
+	display: none;
+}
+
+.label2 {
+	width: 29px;
+	height: 29px;
+	color: #fff;
+	text-align: center;
+	border: 1px solid #ddd;
+	line-height: 29px;
+	cursor: pointer;
+	border-radius:5px;
+}
+
+#dom:checked ~ .label2[for="dom"],
+#seg:checked ~ .label2[for="seg"],
+#ter:checked ~ .label2[for="ter"],
+#qua:checked ~ .label2[for="qua"],
+#qui:checked ~ .label2[for="qui"],
+#sex:checked ~ .label2[for="sex"],
+#sab:checked ~ .label2[for="sab"]{
+	background-color: rgb(183, 192, 202) !important; 
+	color: #000;
+}
+
+.p{
+	margin-top: -6px;
+	margin-left: 2px; 
+}
+
+/*home*/
+
+.smenu{
+    overflow: hidden;
+    transition: max-height 0.3s;
+    max-height: 0;
+}
+
+.smenu a{
+    display: block;
+    margin: 4px 0;
+}
+
+.smenu a:before{
+    position: absolute;
+    width: 6px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.smenu a:hover:before{
+    opacity: 1; 
+}
+
+.nav-item2:target .smenu{
+    max-height: 20em;
+    margin-left: 30px;
+}
+
+.bg-nav{
+    background-color: #eee !important;
+    border-right: 1px solid #bbb;
+}
+
+.lia:hover{
+    background-color: #ddd;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+  
+.sidebar-sticky{
+    position: relative;
+    top: 0;
+    min-height:100vh;
+    padding-top: 58px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+  
+@supports ((position: -webkit-sticky) or (position: sticky)){
+    .sidebar-sticky{
+        position: -webkit-sticky;
+        position: sticky;
+    }
+}
+  
+[role="main"]{
+    padding-top: 133px; 
+}
+  
+@media (min-width: 768px) {
+    [role="main"]{
+        padding-top: 48px; 
+    }
+}
+
+.navbar-brand{
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+}
+  
+.navbar .form-control{
+    padding: .75rem 1rem;
+    border-width: 0;
+    border-radius: 5px;
+}
+  
+.form-control-dark{
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus{
+    border: none !important;
+}
+
+.p1{
+    font-size: 12px;
+}
+
+/*sidebar*/
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+  }
+  
+  #sidebar-wrapper{
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+  }
+  
+  #sidebar-wrapper{
+    width: 15rem;
+  }
+  
+  #page-content-wrapper {
+    min-width: 100vw;
+  }
+  
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+  
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
+  
+
+
+
